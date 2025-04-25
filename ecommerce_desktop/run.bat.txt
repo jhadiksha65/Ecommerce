@@ -1,0 +1,5 @@
+@echo off
+set CLASSPATH=.;lib\mysql-connector-j-9.2.0.jar
+javac -d . src\model\*.java src\dao\*.java src\service\*.java src\exception\*.java src\ui\*.java
+java -cp %CLASSPATH% ui.LoginFrame
+pause
